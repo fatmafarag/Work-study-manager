@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+         <!-- Bootstrap CSS -->
+     <link href="bootstrap.css" rel="stylesheet">
+     <link href="Todo.css" rel="stylesheet">
+        
+</head>
+  <body>
+        <div id="header-placeholder"></div>
+        
+                <div class="container">
+                    <div class="jumbotron">
+                        <h3 style="font-weight:bold;">Work Study Manager</h3>
+                        <p>Track your money, know your tasks and recieve feedbacks..</p>
+                    </div>
+                    <div id="nav-placeholder"></div>
+                            
+    <div class="container" style="padding-top: 20px;">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                    <form id="add-task" method="post">
+                            <b>To do list</b>
+                            
+                    <input name="task" id="task-value" class="form-control input-lg" placeholder="Add task">
+                    <input type="submit" class="btn btn-default" style="margin-top: 10px;" name="submit" value="Add task">
+                    </form>
+                    
+                </div><!-- panel-header -->
+
+                <div class="panel-body">
+                    <ul class="list-unstyled" id="todo-list">
+                    </ul>
+                </div><!-- panel body -->
+                </div><!-- panel -->
+            </div><!-- col-md-6 -->
+
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                    <b>Done tasks</b>
+                </div><!-- panel-header -->
+
+                <div class="panel-body">
+                    <ul class="list-unstyled" id="done-list">
+                        
+                    </ul>
+                </div><!-- panel body -->
+                </div><!-- panel -->
+            </div><!-- col-md-6 -->
+        </div><!-- row -->
+    </div><!-- container -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap Javascript -->
+    <script src="bootstrap.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
